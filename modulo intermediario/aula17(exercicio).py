@@ -31,7 +31,7 @@ for question in questions:
 
     esc = input('opção: ')
 
-    acertou = False
+    y = False
     esc_int = None
     qtd_opcoes = len(opcoes)
 
@@ -41,10 +41,10 @@ for question in questions:
     if esc_int is not None:
         if esc_int >= 0 and esc_int < qtd_opcoes:
             if opcoes[esc_int] == question['Resposta']:
-                acertou = True
+                y = True
 
     print()
-    if acertou:
+    if y:
         qtd_acertos += 1
         print('Acertou 👍')
     else:
